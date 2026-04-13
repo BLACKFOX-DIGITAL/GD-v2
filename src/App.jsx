@@ -5,18 +5,13 @@ import { generateDorks } from './utils/dorkGenerator';
 import './index.css';
 
 const CATEGORY_LABELS = {
-  company:          'Company Identity',
-  emails:           'Emails',
-  phones:           'Phone Numbers',
+  company:            'Company Identity',
+  emails:             'Emails',
+  phones:             'Phone Numbers',
   'linkedin-company': 'LinkedIn — Company',
   'linkedin-people':  'LinkedIn — Employees',
-  social:           'Social Media',
-  jobs:             'Job Postings',
-  news:             'News & Press',
-  business:         'Business Info',
-  reviews:          'Reviews',
-  techstack:        'Tech Stack',
-  documents:        'Documents',
+  social:             'Social Media',
+  business:           'Business Info',
 };
 
 export default function App() {

@@ -23,7 +23,10 @@ export default function DorkSection({ section, defaultOpen = true }) {
   const c = colorMap[section.color] || colorMap.blue;
 
   function handleCopyAll() {
-    navigator.clipboard.writeText(section.dorks.join('\n')).then(() => {
+    const text = section.dorks
+      .map((d) => (typeof d === 'string' ? d : d.query))
+      .join('\n');
+    navigator.clipboard.writeText(text).then(() => {
       setCopiedAll(true);
       setTimeout(() => setCopiedAll(false), 2000);
     });
