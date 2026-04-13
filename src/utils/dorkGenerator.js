@@ -66,10 +66,8 @@ export function generateDorks(rawDomain) {
       label: 'LinkedIn — Employees',
       color: 'purple',
       dorks: [
-        { query: `site:linkedin.com/in "${name}" CEO OR president OR owner OR founder`,          desc: 'C-suite & founders — top decision makers' },
-        { query: `site:linkedin.com/in "${name}" VP OR director OR manager OR head`,             desc: 'Mid-to-senior level — likely buying decision makers' },
-        { query: `site:linkedin.com/in "${name}" sales OR "business development" OR account`,   desc: 'Sales team — useful to know who you\'re competing with' },
-        { query: `site:linkedin.com/in "${domain}"`,                                             desc: 'Profiles that list the domain (strong match)' },
+        { query: `site:linkedin.com/in "${name}"`,      desc: 'All LinkedIn profiles mentioning the company name' },
+        { query: `site:linkedin.com/in "${domain}"`,    desc: 'Profiles that list the company domain (strongest match)' },
       ],
     },
     {
